@@ -1,6 +1,12 @@
 ## circusdesignとは
 
 若手デザイナーコミュニティです。
+これからいろいろ活動していくぞ！！！！
+
+
+## website
+
+https://circusdesign.jp
 
 ## メンバー
 - おしみん [@Hi6876](https://twitter.com/Hi6876)
