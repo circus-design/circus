@@ -1,0 +1,31 @@
+@import "../../utils/properties.css";
+
+.default { color: #000; }
+.info { color: #8C8C8C; }
+.warning { color: #f0163a; }
+
+.h1 {
+  font-size: var(--font-size-h6);
+  font-weight: 600;
+  color: var(--color-km-gray-700)
+}
+
+.maintext {
+  font-size: var(--font-size-s);
+  color: var(--color-km-gray-700);
+}
+
+.h1Container {
+  margin: 70px 0 30px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--color-km-gray-300)
+}
+
+.lcContainer {
+  margin: 10px 0 40px;
+}
+
+.longtext {
+  white-space: pre-wrap;
+  line-height: 2rem;
+}

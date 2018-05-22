@@ -1,0 +1,5 @@
+@import "../../utils/properties.css";
+
+.example {
+  background-color: red;
+}
