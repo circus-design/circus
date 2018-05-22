@@ -28,18 +28,6 @@ export const TextLink = ({
   </Link>
 };
 
-export const AskingButton = (props: any) => (
-  <Link href={ "https://goo.gl/forms/n2TS6klTlw8g9Iao1" }>
-    <a className={ style.asking } rel={ "noreferrer noopener" } target={ "_blank" }>ご意見はこちら</a>
-  </Link>
-) 
-
-export const DownloadButton = (props: any) => (
-  <Link href={ "/static/logo/Logo_Package.zip" }>
-    <a className={ style.download } download={ "Logo.zip" }>ロゴをダウンロード</a>
-  </Link>
-);
-
 
 
 
