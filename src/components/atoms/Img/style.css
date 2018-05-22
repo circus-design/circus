@@ -1,0 +1,16 @@
+@import "../../utils/properties.css";
+
+.km_logo_beta {
+  width: 200px;
+  height: 200px;
+  padding: 5px 20px 0 20px;
+}
+
+.margin40AlignLeft {
+  margin: 20px 40px 40px 0;
+}
+
+.mainLogo {
+  text-align: center;
+  margin: 60px auto;
+}

@@ -1,0 +1,58 @@
+{
+  "name": "km-design",
+  "version": "0.1.1",
+  "description": "komerco design system",
+  "repository": "git:ghe.ckpd.co:Komerco/Design.git",
+  "author": "kenshir0f<kenshiro-fujii@cookpad.com>",
+  "private": true,
+  "devDependencies": {
+    "@storybook/cli": "^3.4.4",
+    "@types/storybook__addon-actions": "^3.0.3",
+    "@types/storybook__react": "^3.0.7",
+    "@storybook/addon-actions": "^3.4.4",
+    "@storybook/addon-links": "^3.4.4",
+    "@storybook/addon-viewport": "^3.4.4",
+    "@storybook/addons": "^3.4.4",
+    "@storybook/react": "^3.4.4",
+    "@types/next": "^2.4.9",
+    "@types/node": "^10.0.4",
+    "@types/react": "^16.3.13",
+    "@types/react-dom": "^16.0.5",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "concurrently": "^3.5.1",
+    "cpx": "1.5.0",
+    "firebase-tools": "^3.18.4",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3",
+    "watch-run": "^1.2.5",
+    "ts-loader": "3.5.0",
+    "typed-css-modules": "^0.3.4"
+  },
+  "dependencies": {
+    "@zeit/next-css": "0.2.0",
+    "babel-runtime": "6.26.0",
+    "firebase-admin": "5.12.0",
+    "firebase-functions": "1.0.1",
+    "next": "6.0.3",
+    "react": "16.3.2",
+    "react-dom": "16.3.2"
+  },
+  "scripts": {
+    "lint": "tslint src/**/*.ts",
+    "create-dist": "mkdir -p dist dist/public dist/pages",
+    "predeploy": "yarn build",
+    "serve": "firebase serve",
+    "deploy": "firebase deploy",
+    "dev": "concurrently 'yarn watch-static' 'tcm --watch src' 'cpx \"./src/**/*.css\" ./dist --watch' 'tsc --watch' 'next ./dist'",
+    "build": "yarn clean && tcm src && cpx './src/**/*.css' ./dist && tsc && next build ./dist && cp package.json dist/package.json && yarn create-public",
+    "start": "next start ./dist",
+    "clean": "rm -rf dist/ && yarn create-dist && yarn install",
+    "reset": "rm -rf node_modules dist && yarn create-dist && yarn install",
+    "watch-static": "watch-run -i -p 'src/static/**' 'rm -rf dist/static && mkdir dist/static && cpx \"src/static/**/*\" dist/static'",
+    "create-public": "mkdir dist/public/static && cp -r src/static dist/public && echo \"not used\" > dist/public/__placeholder.html",
+    "storybook": "start-storybook -s ./src/ -p 6006",
+    "build-storybook": "build-storybook"
+  }
+}
+

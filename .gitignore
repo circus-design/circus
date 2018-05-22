@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Cloud Functions
+# node_modules
+dist
+node_modules
+functions/.runtimeconfig.json
+firebase-debug.log
+yarn-error.log
+coverage
