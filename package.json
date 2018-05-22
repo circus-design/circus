@@ -1,9 +1,8 @@
 {
-  "name": "km-design",
+  "name": "circus-design",
   "version": "0.1.1",
-  "description": "komerco design system",
-  "repository": "git:ghe.ckpd.co:Komerco/Design.git",
-  "author": "kenshir0f<kenshiro-fujii@cookpad.com>",
+  "description": "circus design",
+  "author": "kenshir0f<tmu.kenshiro@gmail.com>",
   "private": true,
   "devDependencies": {
     "@storybook/cli": "^3.4.4",
