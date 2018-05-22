@@ -1,0 +1,35 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  background-color: #FAFAFA;
+}
+
+div, p ,h1 ,h2, h3, h4, h5, h6{
+  margin: 0;
+  -webkit-font-smoothing: antialiased;  
+}
+
+.flex {
+  height: 100%;
+  display: flex; 
+}
+
+body > div:first-child {
+  height: 100%;
+}
+
+body > div:first-child > main{
+  width: 100%;
+}
+
+.width100 {
+  width: calc(100% - 240px);
+  left: 240px;
+  height: 100%;
+  box-sizing: inherit;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  top: 0;
+}

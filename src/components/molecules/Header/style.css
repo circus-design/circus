@@ -1,0 +1,12 @@
+@import "../../utils/properties.css";
+
+.bg {
+  background-color: var(--color-km-gray-200);
+  height: 170px;
+  padding-left: 60px;
+  font-size: var(--font-size-h6);
+  font-weight: 600;
+  line-height: 160px;
+  color: var(--color-km-black);
+  width: 100%;
+}

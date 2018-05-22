@@ -1,7 +1,7 @@
 ## circusdesignとは
 
-若手デザイナーコミュニティです。
-これからいろいろ活動していくぞ！！！！
+デザイナーコミュニティです。
+やっていくぞ！！！！１１
 
 
 ## website
@@ -13,3 +13,20 @@ https://circusdesign.jp
 - なかじー [@nakaj1_man](https://twitter.com/nakaj1_man)
 - ちゃんちー [@chihirooo0707](https://twitter.com/chihirooo0707)
 - ふじけん [@kenshir0f](https://twitter.com/kenshir0f)
+- holly [@hosoi_daiki](https://twitter.com/hosoi_daiki) 
+
+
+## stetup
+
+```
+yarn 
+yarn build
+```
+
+## dev
+```
+yarn dev
+```
+
+
+
